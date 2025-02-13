@@ -194,12 +194,12 @@
   }
 
   .text-left, .text-right {
-      width: 90%;
+      width: 80%;
       text-align: center;
   }
 
   .text-left h1, .text-right h1 {
-      font-size: 2rem;
+      font-size: 1.5rem;
   }
 }
 
