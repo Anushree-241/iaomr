@@ -218,11 +218,8 @@
     font-size: 1.8rem;
   }
 
-  .text-left h3{
-    font-size: 1rem;
-  }
-  .text-right h3 {
-    font-size: 0.5rem;
+  .text-left h3, .text-right h3 {
+    font-size: 1.2rem;
   }
 
   .text-right {
