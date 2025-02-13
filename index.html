@@ -38,219 +38,130 @@
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            
           >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#About">About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Committee</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="team.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Committee
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="team.html">Organizing team</a></li>
+                  <li><a class="dropdown-item" href="team.html#OfficeBearers">Iaomr office bearers</a></li>
+                  <li><a class="dropdown-item" href="team.html#natcoordinators">National co ordinators list</a></li>
+                </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Registration</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="registration.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Registration
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="registration.html#reg-details">Registraion Details</a></li>
+                  <li><a class="dropdown-item" href="registration.html#regis-form">Registration Form</a></li>
+                  
+                </ul>
               </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="scientific.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Scientific
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="scientific.html#Scientific-schedule">Scientific Schedule</a></li>
+<li><a class="dropdown-item" href="scientific.html#Paper-presentation">Paper Presentation</a></li>
+<li><a class="dropdown-item" href="scientific.html#Poster-presentation">Poster Presentation</a></li>
+<li><a class="dropdown-item" href="scientific.html#Table-workshop">Table Workshop</a></li>
 
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="Venue.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Venue
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="venue.html#About-venue">About Venue</a></li>
+<li><a class="dropdown-item" href="venue.html#Nearby-places">Nearby Places</a></li>
+<li><a class="dropdown-item" href="venue.html#Popular-cuisine">Popular Cuisine</a></li>
+
+                </ul>
+              </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </section>
+    <!-- 🔹 Carousel Section -->
     <section id="banner">
-      <div
-        id="carouselExampleAutoplaying"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../Static/banner1.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-overlay">
-              <div class="overlay-content">
-                <div class="text-left">
-                  <h1
-                    style="
-                      color: rgb(255, 200, 35);
-                      font-size: 4rem;
-                      font-weight: bold;
-                    "
-                  >
-                    23rd National & 1st International<br />
-                    IAOMR Post Graduate Convention 2025
-                  </h1>
-                  <h3>Bangkok, Thailand<br />9th to 12th July 2025</h3>
-                </div>
-                <div class="text-right">
-                  <h1
-                    style="
-                      font-size: 3rem;
-                      font-weight: bold;
-                      color: rgb(255, 255, 255);
-                    "
-                  >
-                    Theme <br />
-                  </h1>
-                  <h1
-                    style="
-                      font-size: 2.5rem;
-                      font-weight: bolder;
-                      color: rgb(253, 204, 125);
-                      font-family: 'Dancing Script', serif;
-                      font-optical-sizing: auto;
-                      font-style: normal;
-                      font-variation-settings:'wdth' 100;
-                    "
-                  >
-                    Looking Beyond Boundaries
-                  </h1>
-                  <br /><br />
-
-                  <h3
-                    style="
-                      color: rgb(197, 246, 250);
-                      font-weight: bold;
-                      
-                    "
-                  >
-                    3 Night / 4 Days extravaganza of scientific Social and
-                    Cultural Events overseas
-                  </h3>
-                  <br />
-                  <h4 style="color: lemonchiffon">Organized by</h4>
-                  <h5 style="color: lemonchiffon">Team Bengaluru, IAOMR <br/>In association with The Oxford Dental College, Bengaluru</h5>
-                </div>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="../Static/banner1.jpg" class="d-block w-100" alt="Banner 1">
+                  <div class="carousel-overlay">
+                      <div class="overlay-content">
+                          <div class="text-left">
+                              <h1>1st International<br>&<br>23rd National IAOMR Post Graduate Convention 2025</h1>
+                              <h3>Bangkok, Thailand<br>9th to 12th July 2025</h3>
+                          </div>
+                          <div class="text-right">
+                              <h1>Theme</h1>
+                              <h2 class="theme-title">Looking Beyond Boundaries</h2>
+                              <h3>3 Night / 4 Days extravaganza of scientific, social, and cultural events overseas</h3>
+                              <h4>Organized by</h4>
+                              <h5>Team Bengaluru, IAOMR</h5>
+                          </div>
+                      </div>
+                  </div>
               </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../Static/banner2.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-overlay">
-              <div class="overlay-content">
-                <div class="text-left">
-                  <h1
-                    style="
-                      color: rgb(255, 200, 35);
-                      font-size: 4rem;
-                      font-weight: bold;
-                    "
-                  >
-                    23rd National & 1st International<br />
-                    IAOMR Post Graduate Convention 2025
-                  </h1>
-                  <h3>Bangkok, Thailand<br />9th to 12th July 2025</h3>
-                </div>
-                <div class="text-right">
-                  <h1
-                    style="
-                      font-size: 3rem;
-                      font-weight: bold;
-                      color: rgb(255, 255, 255);
-                    "
-                  >
-                    Theme <br />
-                  </h1>
-                  <h1
-                    style="
-                      font-size: 2.5rem;
-                      font-weight: bolder;
-                      color: rgb(253, 204, 125);
-                      font-family: 'Dancing Script', serif;
-                      font-optical-sizing: auto;
-                      font-style: normal;
-                      font-variation-settings:'wdth' 100;
-                    "
-                  >
-                    Looking Beyond Boundaries
-                  </h1>
-                  <br /><br />
-
-                  <h3
-                    style="
-                      color: rgb(197, 246, 250);
-                      font-weight: bold;
-                      
-                    "
-                  >
-                    3 Night / 4 Days extravaganza of scientific Social and
-                    Cultural Events overseas
-                  </h3>
-                  <br />
-                  <h4 style="color: lemonchiffon">Organized by</h4>
-                  <h5 style="color: lemonchiffon">Team Bengaluru, IAOMR <br/>In association with The Oxford Dental College, Bengaluru</h5>
-                </div>
+              <div class="carousel-item">
+                  <img src="../Static/banner2.jpg" class="d-block w-100" alt="Banner 2">
+                  <div class="carousel-overlay">
+                      <div class="overlay-content">
+                          <div class="text-left">
+                              <h1>1st International<br>&<br>23rd National IAOMR Post Graduate Convention 2025</h1>
+                              <h3>Bangkok, Thailand<br>9th to 12th July 2025</h3>
+                          </div>
+                          <div class="text-right">
+                              <h1>Theme</h1>
+                              <h2 class="theme-title">Looking Beyond Boundaries</h2>
+                              <h3>3 Night / 4 Days extravaganza of scientific, social, and cultural events overseas</h3>
+                              <h4>Organized by</h4>
+                              <h5>Team Bengaluru, IAOMR</h5>
+                          </div>
+                      </div>
+                  </div>
               </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../Static/banner3.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-overlay">
-              <div class="overlay-content">
-                <div class="text-left">
-                  <h1
-                    style="
-                      color: rgb(255, 200, 35);
-                      font-size: 4rem;
-                      font-weight: bold;
-                    "
-                  >
-                    23rd National & 1st International<br />
-                    IAOMR Post Graduate Convention 2025
-                  </h1>
-                  <h3>Bangkok, Thailand<br />9th to 12th July 2025</h3>
-                </div>
-                <div class="text-right">
-                  <h1
-                    style="
-                      font-size: 3rem;
-                      font-weight: bold;
-                      color: rgb(255, 255, 255);
-                    "
-                  >
-                    Theme <br />
-                  </h1>
-                  <h1
-                    style="
-                      font-size: 2.5rem;
-                      font-weight: bolder;
-                      color: rgb(253, 204, 125);
-                      font-family: 'Dancing Script', serif;
-                      font-optical-sizing: auto;
-                      font-style: normal;
-                      font-variation-settings:'wdth' 100;
-                    "
-                  >
-                    Looking Beyond Boundaries
-                  </h1>
-                  <br /><br />
-
-                  <h3
-                    style="
-                      color: rgb(197, 246, 250);
-                      font-weight: bold;
-                      
-                    "
-                  >
-                    3 Night / 4 Days extravaganza of scientific Social and
-                    Cultural Events overseas
-                  </h3>
-                  <br />
-                  <h4 style="color: lemonchiffon">Organized by</h4>
-                  <h5 style="color: lemonchiffon">Team Bengaluru, IAOMR <br/>In association with The Oxford Dental College, Bengaluru</h5>
-                </div>
+              <div class="carousel-item">
+                  <img src="../Static/banner3.jpg" class="d-block w-100" alt="Banner 3">
+                  <div class="carousel-overlay">
+                      <div class="overlay-content">
+                          <div class="text-left">
+                              <h1>1st International<br>&<br>23rd National IAOMR Post Graduate Convention 2025</h1>
+                              <h3>Bangkok, Thailand<br>9th to 12th July 2025</h3>
+                          </div>
+                          <div class="text-right">
+                              <h1>Theme</h1>
+                              <h2 class="theme-title">Looking Beyond Boundaries</h2>
+                              <h3>3 Night / 4 Days extravaganza of scientific, social, and cultural events overseas</h3>
+                              <h4>Organized by</h4>
+                              <h5>Team Bengaluru, IAOMR</h5>
+                          </div>
+                      </div>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
       </div>
-    </section>
+  </section>
 
     <section id="orgby">
       <h3>Organized by Team Bengaluru, IAOMR</h3>
@@ -387,9 +298,10 @@
       <p>
         <h5>Organized by</h5> <br/>
         Team Bengaluru, IAOMR <br/>
-        In association with The Oxford Dental College, Bengaluru<br/>
+        <br/>
         Email: iaomrpgconvention2025@gmail.com
-      </p><br/><br/>
+      </p>
+      <br/><br/>
       <p style="text-align: center;">&copy; All rights reserved 2025 , Indian Academy of Oral Medicine and Radiology </p>
     </footer>
   </body>
