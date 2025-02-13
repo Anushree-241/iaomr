@@ -118,7 +118,6 @@
   height: 600px;
   object-fit: cover;
 }
-
 /* 🔹 Carousel Overlay */
 .carousel-overlay {
   position: absolute;
@@ -130,78 +129,109 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
+  box-sizing: border-box; /* Prevents overflow issues */
 }
 
+/* 🔹 Responsive Layout */
 .overlay-content {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap; /* Allows stacking on smaller screens */
+  justify-content: center;
   align-items: center;
+  text-align: center;
   color: white;
+  gap: 20px; /* Adds spacing between elements */
 }
 
+/* 🔹 Text Containers */
 .text-left, .text-right {
   padding: 20px;
   width: 45%;
-  text-align: left;
+  max-width: 600px; /* Prevents text from stretching too wide */
+  text-align: center;
 }
 
-.text-left h1 {
+/* 🔹 Responsive Text Scaling */
+.text-left h1, .text-right h1 {
   color: rgb(255, 200, 35);
-  font-size: 4rem;
+  font-size: clamp(2rem, 5vw, 3.5rem); /* Dynamically adjusts */
   font-weight: bold;
 }
 
 .text-left h3, .text-right h3 {
-  font-size: 2rem;
+  font-size: clamp(1rem, 3vw, 2rem);
   font-weight: bold;
 }
 
-.text-right {
-  text-align: center;
-  background-color: #00000046;
-  padding: 20px;
-  border-radius: 5%;
-  width: 35%;
-}
-
-.text-right h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  color: white;
-}
-
-.theme-title{
-  font-size: 2.5rem;
+.theme-title {
+  font-size: clamp(1.5rem, 3.5vw, 2.5rem);
   font-weight: bolder;
   color: rgb(252, 203, 124);
   font-family: 'Dancing Script', serif;
 }
 
-.text-right h4, .text-right h5 {
-  color: lemonchiffon;
+/* 🔹 Background Styling for Right Section */
+.text-right {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  width: 40%;
 }
 
-/* 🔹 Fullscreen Carousel on Mobile */
+/* 🔹 Full Mobile Responsiveness */
 @media (max-width: 768px) {
-  #banner, #carouselExampleAutoplaying, .carousel-inner, .carousel-item, #banner img {
-      height: 100vh;
+  .carousel-overlay {
+    padding: 10px;
   }
 
   .overlay-content {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column; /* Stacks elements on top of each other */
+    align-items: center;
+    text-align: center;
   }
 
   .text-left, .text-right {
-      width: 80%;
-      text-align: center;
+    width: 90%; /* Makes content wider for better readability */
+    text-align: center;
+    padding: 15px;
   }
 
   .text-left h1, .text-right h1 {
-      font-size: 1.5rem;
+    font-size: 2rem; /* Reduce size for smaller screens */
+  }
+
+  .text-left h3, .text-right h3 {
+    font-size: 1.2rem;
+  }
+
+  .text-right {
+    width: 80%; /* Adjust width to fit screen */
+    padding: 15px;
   }
 }
+
+/* 🔹 Ultra-Small Screens (Phones < 480px) */
+@media (max-width: 480px) {
+  .text-left h1, .text-right h1 {
+    font-size: 1.8rem;
+  }
+
+  .text-left h3{
+    font-size: 1rem;
+  }
+  .text-right h3 {
+    font-size: 0.5rem;
+  }
+
+  .text-right {
+    width: 90%;
+    padding: 10px;
+  }
+}
+
+
 
 
 #About{
