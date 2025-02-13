@@ -1,0 +1,468 @@
+/* Navbar Logo Resizing */
+#navbar .navbar-brand .logo {
+  width: 140px;
+  height: auto;
+  max-height: 50px;
+}
+
+/* Navbar Gradient Background */
+.navbar {
+  background: rgb(2,0,36);
+  background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 39%, rgba(0,212,255,1) 100%);
+}
+
+/* Navbar Link Styling */
+.nav-link {
+  font-family: "Noto Serif", serif;
+  font-weight: 600;
+  color: white !important;
+  font-size: larger;
+}
+
+/* Hover and Visited State */
+.nav-link:hover,
+.nav-link:visited {
+  color: rgb(216, 236, 254) !important;
+}
+
+/* Dropdown Items */
+.dropdown-item {
+  font-family: "Noto Serif", serif;
+  font-weight: 600;
+  color: white !important;
+  font-size: medium;
+  background-color: transparent;
+}
+
+/* Dropdown Hover Effects */
+.dropdown-item:hover,
+.dropdown-item:visited {
+  color: rgb(216, 236, 254) !important;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Dropdown Background */
+.dropdown-menu {
+  background-color: black !important;
+  border: none;
+}
+
+/* Dropdown Toggle Text */
+.nav-link.dropdown-toggle {
+  color: white !important;
+}
+
+/* Dropdown Active State */
+.nav-link.dropdown-toggle:focus,
+.nav-link.dropdown-toggle:active {
+  color: rgb(216, 236, 254) !important;
+}
+
+/* 🌟 MOBILE RESPONSIVENESS FIXES 🌟 */
+@media (max-width: 991px) {
+  /* Center Navbar Links */
+  .navbar-nav {
+      text-align: center;
+  }
+
+  /* Ensure Dropdowns Open Properly */
+  .dropdown-menu {
+      position: static;
+      width: 100%;
+      text-align: center;
+  }
+
+  /* Increase Touch Target for Links */
+  .nav-link, .dropdown-item {
+      padding: 10px 15px;
+      font-size: larger;
+  }
+
+  /* Adjust Logo Size */
+  #navbar .navbar-brand .logo {
+      width: 120px;
+      max-height: 45px;
+  }
+}
+
+/* Extra Small Screens (Phones) */
+@media (max-width: 576px) {
+  .nav-link, .dropdown-item {
+      font-size: medium;
+      padding: 12px;
+  }
+
+  /* Reduce Logo Size for Smallest Screens */
+  #navbar .navbar-brand .logo {
+      width: 100px;
+      max-height: 40px;
+  }
+}
+.navbar-toggler {
+  border-color: white !important; 
+}
+
+.navbar-toggler-icon {
+  filter: invert(1); 
+}
+
+
+
+/* 🔹 Banner */
+#banner {
+  width: 100%;
+}
+
+#banner img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+/* 🔹 Carousel Overlay */
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(19, 17, 17, 0.564);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.text-left, .text-right {
+  padding: 20px;
+  width: 45%;
+  text-align: left;
+}
+
+.text-left h1 {
+  color: rgb(255, 200, 35);
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.text-left h3, .text-right h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.text-right {
+  text-align: center;
+  background-color: #00000046;
+  padding: 20px;
+  border-radius: 5%;
+  width: 35%;
+}
+
+.text-right h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.theme-title{
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: rgb(252, 203, 124);
+  font-family: 'Dancing Script', serif;
+}
+
+.text-right h4, .text-right h5 {
+  color: lemonchiffon;
+}
+
+/* 🔹 Fullscreen Carousel on Mobile */
+@media (max-width: 768px) {
+  #banner, #carouselExampleAutoplaying, .carousel-inner, .carousel-item, #banner img {
+      height: 100vh;
+  }
+
+  .overlay-content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .text-left, .text-right {
+      width: 80%;
+      text-align: center;
+  }
+
+  .text-left h1, .text-right h1 {
+      font-size: 1.5rem;
+  }
+  .text-left h3, .text-right h3{
+      font-size: 1rem;
+  }
+}
+
+
+#About{
+    text-align: center;
+    padding: 5%;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(252,176,69,1) 100%);
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 900;
+    font-variation-settings:
+    "wdth" 100;
+
+}
+#About h6{
+    text-align: justify;
+    padding: 5%;
+    font-size: larger;
+    font-weight: 600;
+}
+
+/* General Styling for Organized by Section */
+#orgby {
+  text-align: center;
+  padding: 3%;
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin: 40px auto;
+  max-width: 90%;
+}
+
+#orgby h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#orgby p {
+  font-size: 1.2rem;
+  padding: 2%;
+  color: #555;
+}
+
+/* Table Styling */
+#orgby table {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: large;
+  width: 80%;
+}
+
+#orgby table td {
+  padding: 6px;
+}
+
+/* Responsive Grid for Organizers */
+#people {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+#people div {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+#people div:hover {
+  transform: scale(1.05);
+}
+
+#people h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #222;
+}
+
+#people .position {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+#people .contact {
+  font-size: 1rem;
+  color: #007bff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  #orgby {
+      padding: 5%;
+  }
+
+  #orgby p {
+      font-size: 1rem;
+  }
+
+  #people div {
+      width: 100%;
+  }
+
+  #orgby table {
+      width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #orgby h3 {
+      font-size: 1.8rem;
+  }
+
+  #people h4 {
+      font-size: 1.3rem;
+  }
+
+  #people .position {
+      font-size: 1rem;
+  }
+
+  #people .contact {
+      font-size: 0.9rem;
+  }
+}
+
+
+/* General Styling for Message Section */
+#message {
+  padding: 3% 0;
+  font-family: "Noto Serif", serif;
+  background-color: #f9f9f9;
+}
+
+/* Card Styling */
+#message .card {
+  border: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+#message .card:hover {
+  transform: scale(1.02);
+}
+
+/* Text Alignment */
+#message .card-body {
+  text-align: center;
+  padding: 20px;
+}
+
+#message h5 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+#message p {
+  font-size: 1.1rem;
+  text-align: justify;
+  color: #555;
+}
+
+#message h6 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #222;
+  margin-top: 10px;
+}
+
+#message span {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Image Styling */
+#message img {
+  height: 300px;
+  width: 100%;
+  object-fit: fill;
+  border-radius: 8px;
+}
+
+/* Flexbox for Desktop */
+@media (min-width: 992px) {
+  #message .row {
+      display: flex;
+      align-items: center;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #message .row {
+      flex-direction: column;
+  }
+
+  /* Center Image */
+  #message .col-md-3,
+  #message .col-md-2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 15px;
+  }
+
+  #message img {
+      height: auto;
+      max-width: 80%;
+      margin: 0 auto;
+  }
+
+  #message h5 {
+      font-size: 1.6rem;
+  }
+
+  #message p {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #message h5 {
+      font-size: 1.4rem;
+  }
+
+  #message p {
+      font-size: 0.95rem;
+  }
+
+  #message h6 {
+      font-size: 1.2rem;
+  }
+
+  #message span {
+      font-size: 0.9rem;
+  }
+}
+
+
+footer{
+  background-color: rgb(0, 0, 0);
+  padding: 2%;
+  text-align: center;
+  color: rgb(146, 146, 146);
+  font-size: medium;
+  font-weight: 500;
+}
