@@ -118,7 +118,6 @@
   height: 600px;
   object-fit: cover;
 }
-
 /* 🔹 Carousel Overlay */
 .carousel-overlay {
   position: absolute;
@@ -131,47 +130,39 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
+  box-sizing: border-box; /* Prevents overflow issues */
 }
 
+/* 🔹 Responsive Layout */
 .overlay-content {
   width: 100%;
   display: flex;
   flex-wrap: wrap; /* Allows stacking on smaller screens */
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  color: white;
   text-align: center;
-  gap: 20px; /* Adds space between stacked elements */
+  color: white;
+  gap: 20px; /* Adds spacing between elements */
 }
 
+/* 🔹 Text Containers */
 .text-left, .text-right {
   padding: 20px;
   width: 45%;
+  max-width: 600px; /* Prevents text from stretching too wide */
+  text-align: center;
 }
 
-/* 🔹 Typography */
-.text-left h1 {
+/* 🔹 Responsive Text Scaling */
+.text-left h1, .text-right h1 {
   color: rgb(255, 200, 35);
-  font-size: clamp(2rem, 5vw, 4rem); /* Responsive font */
+  font-size: clamp(2rem, 5vw, 3.5rem); /* Dynamically adjusts */
   font-weight: bold;
 }
 
 .text-left h3, .text-right h3 {
   font-size: clamp(1rem, 3vw, 2rem);
   font-weight: bold;
-}
-
-.text-right {
-  background-color: #00000046;
-  padding: 20px;
-  border-radius: 5%;
-  width: 35%;
-}
-
-.text-right h1 {
-  font-size: clamp(1.5rem, 4vw, 3rem);
-  font-weight: bold;
-  color: white;
 }
 
 .theme-title {
@@ -181,31 +172,34 @@
   font-family: 'Dancing Script', serif;
 }
 
-.text-right h4, .text-right h5 {
-  color: lemonchiffon;
+/* 🔹 Background Styling for Right Section */
+.text-right {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  width: 40%;
 }
 
-/* 🔹 Mobile-Specific Styles */
+/* 🔹 Full Mobile Responsiveness */
 @media (max-width: 768px) {
   .carousel-overlay {
-    padding: 10px; /* Reduce padding */
+    padding: 10px;
   }
 
   .overlay-content {
-    flex-direction: column; /* Stack elements */
+    flex-direction: column; /* Stacks elements on top of each other */
     align-items: center;
     text-align: center;
-    gap: 10px;
   }
 
   .text-left, .text-right {
-    width: 90%; /* Make content wider for better readability */
+    width: 90%; /* Makes content wider for better readability */
     text-align: center;
     padding: 15px;
   }
 
   .text-left h1, .text-right h1 {
-    font-size: 1.8rem;
+    font-size: 2rem; /* Reduce size for smaller screens */
   }
 
   .text-left h3, .text-right h3 {
@@ -213,10 +207,27 @@
   }
 
   .text-right {
-    width: 80%; /* Expand for better fit */
+    width: 80%; /* Adjust width to fit screen */
     padding: 15px;
   }
 }
+
+/* 🔹 Ultra-Small Screens (Phones < 480px) */
+@media (max-width: 480px) {
+  .text-left h1, .text-right h1 {
+    font-size: 1.8rem;
+  }
+
+  .text-left h3, .text-right h3 {
+    font-size: 1rem;
+  }
+
+  .text-right {
+    width: 90%;
+    padding: 10px;
+  }
+}
+
 
 
 
