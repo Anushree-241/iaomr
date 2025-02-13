@@ -189,11 +189,13 @@
   }
 
   .overlay-content {
+    vertical-align: middle;
       flex-direction: column;
       text-align: center;
   }
 
   .text-left, .text-right {
+
       width: 80%;
       text-align: center;
   }
