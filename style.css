@@ -130,35 +130,38 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 .overlay-content {
   width: 100%;
   display: flex;
+  flex-wrap: wrap; /* Allows stacking on smaller screens */
   justify-content: space-between;
   align-items: center;
   color: white;
+  text-align: center;
+  gap: 20px; /* Adds space between stacked elements */
 }
 
 .text-left, .text-right {
   padding: 20px;
   width: 45%;
-  text-align: left;
 }
 
+/* 🔹 Typography */
 .text-left h1 {
   color: rgb(255, 200, 35);
-  font-size: 4rem;
+  font-size: clamp(2rem, 5vw, 4rem); /* Responsive font */
   font-weight: bold;
 }
 
 .text-left h3, .text-right h3 {
-  font-size: 2rem;
+  font-size: clamp(1rem, 3vw, 2rem);
   font-weight: bold;
 }
 
 .text-right {
-  text-align: center;
   background-color: #00000046;
   padding: 20px;
   border-radius: 5%;
@@ -166,13 +169,13 @@
 }
 
 .text-right h1 {
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 4vw, 3rem);
   font-weight: bold;
   color: white;
 }
 
-.theme-title{
-  font-size: 2.5rem;
+.theme-title {
+  font-size: clamp(1.5rem, 3.5vw, 2.5rem);
   font-weight: bolder;
   color: rgb(252, 203, 124);
   font-family: 'Dancing Script', serif;
@@ -182,31 +185,39 @@
   color: lemonchiffon;
 }
 
-/* 🔹 Fullscreen Carousel on Mobile */
+/* 🔹 Mobile-Specific Styles */
 @media (max-width: 768px) {
-  #banner, #carouselExampleAutoplaying, .carousel-inner, .carousel-item, #banner img {
-      height: 100vh;
+  .carousel-overlay {
+    padding: 10px; /* Reduce padding */
   }
 
   .overlay-content {
-    vertical-align: middle;
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column; /* Stack elements */
+    align-items: center;
+    text-align: center;
+    gap: 10px;
   }
 
   .text-left, .text-right {
-
-      width: 80%;
-      text-align: center;
+    width: 90%; /* Make content wider for better readability */
+    text-align: center;
+    padding: 15px;
   }
 
   .text-left h1, .text-right h1 {
-      font-size: 1.5rem;
+    font-size: 1.8rem;
   }
-  .text-left h3, .text-right h3{
-      font-size: 1rem;
+
+  .text-left h3, .text-right h3 {
+    font-size: 1.2rem;
+  }
+
+  .text-right {
+    width: 80%; /* Expand for better fit */
+    padding: 15px;
   }
 }
+
 
 
 #About{
