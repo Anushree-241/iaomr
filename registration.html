@@ -22,6 +22,7 @@
       @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Dancing+Script:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
       </style>
     <link href="../CSS/style.css" rel="stylesheet" />
+    <link href="../CSS/scroll.css" rel="stylesheet" />
   </head>
   <body>
     <section id="navbar">
@@ -64,7 +65,7 @@
                   Registration
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="registration.html#reg-details">Registraion Details</a></li>
+                  <li><a class="dropdown-item" href="registration.html#reg-details">Registration Details</a></li>
                   <li><a class="dropdown-item" href="registration.html#regis-form">Registration Form</a></li>
                   
                 </ul>
@@ -262,6 +263,32 @@
       </div>
       
     </section>
+
+
+    <div class="floating-icon">
+      <a href="#">
+        <img src="../Static/scroll.png" alt="Floating Icon">
+      </a>
+    </div>
+    
+    <!-- JavaScript for Smooth Scroll -->
+<script>
+  var scrollToTopBtn = document.getElementById("scrollTopBtn");
+
+  // Show button when user scrolls down 200px
+  window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          scrollToTopBtn.style.display = "flex";
+      } else {
+          scrollToTopBtn.style.display = "none";
+      }
+  };
+
+  // Smooth scroll to top when clicked
+  scrollToTopBtn.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
     <footer class="mt-5">
         <p>
           <h5>Organized by</h5> <br/>

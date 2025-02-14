@@ -22,6 +22,19 @@
       @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Dancing+Script:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
     </style>
     <link href="../CSS/style.css" rel="stylesheet" />
+    <link href="../CSS/scroll.css" rel="stylesheet" />
+    <style>
+      .fixed-image {
+          height: 200px;  /* Set a fixed height */
+          object-fit: cover; /* Ensures the image covers the area without distortion */
+          width: 100%; /* Ensures full width inside the card */
+      }
+      .food-image {
+            height: 200px; /* Fixed height */
+            object-fit: cover; /* Ensure proper aspect ratio */
+            width: 100%;
+        }
+  </style>
   </head>
   <body>
     <section id="navbar">
@@ -64,7 +77,7 @@
                   Registration
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="registration.html#reg-details">Registraion Details</a></li>
+                  <li><a class="dropdown-item" href="registration.html#reg-details">Registration Details</a></li>
                   <li><a class="dropdown-item" href="registration.html#regis-form">Registration Form</a></li>
                   
                 </ul>
@@ -101,20 +114,373 @@
       </nav>
     </section>
     <section id="About-venue">
-      <h1 class="text-center">About Venue</h1>
-      <p>Details about the venue...</p>
+      <h1 class="text-center">Venue</h1>
+      <div class="container mt-4">
+        <div class="row">
+            <div class="col-6 col-md-3 mb-2">
+                <img src="../Static/Venue/1.jpg" class="img-fluid rounded" alt="Image 1">
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+                <img src="../Static/Venue/2.jpg" class="img-fluid rounded" alt="Image 2">
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+                <img src="../Static/Venue/3.jpg" class="img-fluid rounded" alt="Image 3">
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+                <img src="../Static/Venue/4.jpg" class="img-fluid rounded" alt="Image 4">
+            </div>
+        </div>
+        <h6 class="text-center">Hotel berkeley Bangkok,  pratunum</h6>
+
+    <div class="container mt-5">
+        <h1 class="text-center">How to Reach The Berkeley Hotel Pratunam</h1>
+
+        <div class="mt-4">
+            <h3>🚖 From Suvarnabhumi Airport (BKK)</h3>
+            <ul>
+                <li><b>By Airport Rail Link (Fastest & Cheapest):</b> Take ARL City Line to <b>Ratchaprarop Station</b> (~30 mins), then walk 10 mins.</li>
+                <li><b>By Taxi (Most Convenient):</b> Direct taxi (~THB 300-400, 30-45 mins).</li>
+                <li><b>By Airport Bus:</b> Take <b>Bus S1</b> to Pratunam, then walk 5-10 mins.</li>
+            </ul>
+        </div>
+
+        <div class="mt-4">
+            <h3>🚖 From Don Mueang Airport (DMK)</h3>
+            <ul>
+                <li><b>By Bus + BTS:</b> Take <b>A1 or A2 Bus</b> to <b>Mo Chit BTS</b>, then take BTS Sukhumvit Line to <b>Chit Lom Station</b> (walk 10-12 mins).</li>
+                <li><b>By Taxi:</b> Direct taxi (~THB 250-350, 30-50 mins).</li>
+            </ul>
+        </div>
+
+        <div class="mt-4">
+            <h3>🚇 By BTS Skytrain</h3>
+            <p>Take the <b>Sukhumvit Line</b> to <b>Chit Lom BTS Station</b>, then walk 10 mins via Ratchaprasong intersection.</p>
+        </div>
+
+        <div class="mt-4">
+            <h3>📍 Location on Map</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.8847605207824!2d100.541944!3d13.750742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ed6e0f93a7f%3A0x9c0c63d21f365e62!2sThe%20Berkeley%20Hotel%20Pratunam!5e0!3m2!1sen!2sth!4v1707901234567"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    </div>
     </section>
+    <br/>
+    <hr/>
 
     <section id="Nearby-places">
-      <h2>Nearby Places</h2>
-      <p>Details about nearby attractions...</p>
+      
+      <div class="container mt-4">
+        <h2 class="text-center mb-4">Top 12 Tourist Places in Bangkok</h2>
+        <div class="row">
+            
+            <!-- Card 1 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100 bg-warning">
+                    <img src="../Static/Nearby places/1.jpg" class="card-img-top fixed-image" alt="Grand Palace">
+                    <div class="card-body">
+                        <h4 class="card-title">Grand Palace</h4>
+                        <p class="card-text"><strong>A must-visit landmark, home to the Emerald Buddha.</strong></p>
+                        <a href="https://www.tripadvisor.in/Attractions-g293916-Activities-Bangkok.html" target="_blank" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100 bg-warning">
+                    <img src="../Static/Nearby places/2.jpg" class="card-img-top fixed-image" alt="Wat Arun">
+                    <div class="card-body">
+                        <h4 class="card-title">Wat Arun</h4>
+                        <p class="card-text"><strong> stunning riverside temple, also called the Temple of Dawn.</strong></p>
+                        <a href="https://www.tripadvisor.in/Attractions-g293916-Activities-Bangkok.html" target="_blank" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 3 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100 bg-warning">
+                    <img src="../Static/Nearby places/3.jpg" class="card-img-top fixed-image" alt="Chatuchak Market">
+                    <div class="card-body">
+                        <h4 class="card-title">Chatuchak Market</h4>
+                        <p class="card-text"><strong>One of the world's largest weekend markets. </strong> </p>
+                        <a href="https://www.tripadvisor.in/Attractions-g293916-Activities-Bangkok.html" target="_blank" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 4 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100 bg-warning" >
+                    <img src="../Static/Nearby places/4.jpg" class="card-img-top fixed-image" alt="Khao San Road">
+                    <div class="card-body">
+                        <h4 class="card-title">Khao San Road</h4>
+                        <p class="card-text"><strong>A lively backpacker street with bars and markets.</strong> </p>
+                        <a href="https://www.tripadvisor.in/Attractions-g293916-Activities-Bangkok.html" target="_blank" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 5 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100 bg-secondary">
+                    <img src="../Static/Nearby places/5.jpg" class="card-img-top fixed-image" alt="Wat Pho">
+                    <div class="card-body text-white">
+                        <h4 class="card-title">Wat Pho</h4>
+                        <p class="card-text">Famous for the giant reclining Buddha statue.</p>
+                        <a href="https://www.tripadvisor.in/Attractions-g293916-Activities-Bangkok.html" target="_blank" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 6 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100 bg-secondary">
+                    <img src="../Static/Nearby places/6.jpg" class="card-img-top fixed-image" alt="MBK Center">
+                    <div class="card-body text-white">
+                        <h4 class="card-title">MBK Center</h4>
+                        <p class="card-text">A massive shopping mall with local and branded items.</p>
+                        <a href="https://www.tripadvisor.in/Attractions-g293916-Activities-Bangkok.html" target="_blank" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 7 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100 bg-secondary">
+                    <img src="../Static/Nearby places/7.jpg" class="card-img-top fixed-image" alt="Siam Paragon">
+                    <div class="card-body text-white">
+                        <h4 class="card-title">Siam Paragon</h4>
+                        <p class="card-text">A luxury shopping mall with high-end brands.</p>
+                        <a href="https://www.tripadvisor.in/Attractions-g293916-Activities-Bangkok.html" target="_blank" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 8 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100 bg-secondary">
+                    <img src="../Static/Nearby places/8.jpg" class="card-img-top fixed-image" alt="Chao Phraya River">
+                    <div class="card-body text-white">
+                        <h4 class="card-title">Chao Phraya River</h4>
+                        <p class="card-text">Enjoy scenic boat cruises and river dining.</p>
+                        <a href="https://www.tripadvisor.in/Attractions-g293916-Activities-Bangkok.html" target="_blank" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 9 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100 bg-warning">
+                    <img src="../Static/Nearby places/9.jpg" class="card-img-top fixed-image" alt="Jim Thompson House">
+                    <div class="card-body">
+                        <h4 class="card-title">Jim Thompson House</h4>
+                        <p class="card-text"><strong> A beautiful museum of Thai silk and antiques.</strong></p>
+                        <a href="https://www.tripadvisor.in/Attractions-g293916-Activities-Bangkok.html" target="_blank" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 10 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100 bg-warning">
+                    <img src="../Static/Nearby places/10.jpg" class="card-img-top fixed-image" alt="Erawan Shrine">
+                    <div class="card-body">
+                        <h4 class="card-title">Erawan Shrine</h4>
+                        <p class="card-text"><strong>A famous Hindu shrine attracting many visitors. </strong> </p>
+                        <a href="https://www.tripadvisor.in/Attractions-g293916-Activities-Bangkok.html" target="_blank" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 11 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100 bg-warning">
+                    <img src="../Static/Nearby places/11.jpg" class="card-img-top fixed-image" alt="Asiatique">
+                    <div class="card-body">
+                        <h4 class="card-title">Asiatique</h4>
+                        <p class="card-text"><strong> A night market with shopping, dining, and a Ferris wheel.</strong> </p>
+                        <a href="https://www.tripadvisor.in/Attractions-g293916-Activities-Bangkok.html" target="_blank" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 12 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+              <div class="card h-100 bg-warning">
+                  <img src="../Static/Nearby places/12.jpg" class="card-img-top fixed-image" alt="Lumphini Park">
+                  <div class="card-body">
+                      <h4 class="card-title">Lumphini Park</h4>
+                      <p class="card-text"><strong> A peaceful park in the heart of Bangkok, great for relaxation. </strong></p>
+                      <a href="https://www.tripadvisor.in/Attractions-g293916-Activities-Bangkok.html" target="_blank" class="btn btn-primary">Learn More</a>
+                  </div>
+              </div>
+            </div>
+
+    
+        </div>
+    </div>
     </section>
 
     <section id="Popular-cuisine">
-      <h2>Popular Cuisine</h2>
-      <p>Details about local food specialties...</p>
+      
+<div class="container mt-4">
+  <h2 class="text-center mb-4">Popular Foods in Bangkok</h2>
+  <div class="row">
+      
+      <!-- Non-Vegetarian Food (6 Items) -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="card h-100">
+              <img src="../Static/Food/1.jpg" class="card-img-top food-image" alt="Pad Thai">
+              <div class="card-body">
+                  <h5 class="card-title">Pad Thai</h5>
+                  <p class="card-text">A famous stir-fried noodle dish with shrimp or chicken.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="card h-100">
+              <img src="../Static/Food/2.jpg" class="card-img-top food-image" alt="Tom Yum Goong">
+              <div class="card-body">
+                  <h5 class="card-title">Tom Yum Goong</h5>
+                  <p class="card-text">Spicy and sour shrimp soup with lemongrass.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="card h-100">
+              <img src="../Static/Food/3.jpg" class="card-img-top food-image" alt="Khao Pad">
+              <div class="card-body">
+                  <h5 class="card-title">Khao Pad</h5>
+                  <p class="card-text">Thai-style fried rice, often with chicken or prawns.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="card h-100">
+              <img src="../Static/Food/4.jpg" class="card-img-top food-image" alt="Som Tam">
+              <div class="card-body">
+                  <h5 class="card-title">Som Tam</h5>
+                  <p class="card-text">Spicy green papaya salad, often served with dried shrimp.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="card h-100">
+              <img src="../Static/Food/5.jpg" class="card-img-top food-image" alt="Gaeng Daeng">
+              <div class="card-body">
+                  <h5 class="card-title">Gaeng Daeng</h5>
+                  <p class="card-text">Red curry made with meat, coconut milk, and spices.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="card h-100">
+              <img src="../Static/Food/6.jpg" class="card-img-top food-image" alt="Moo Ping">
+              <div class="card-body">
+                  <h5 class="card-title">Moo Ping</h5>
+                  <p class="card-text">Thai grilled pork skewers, usually served with sticky rice.</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Vegetarian Food (6 Items) -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="card h-100">
+              <img src="../Static/Food/7.jpg" class="card-img-top food-image" alt="Pad See Ew">
+              <div class="card-body">
+                  <h5 class="card-title">Pad See Ew 🌿</h5>
+                  <p class="card-text">Stir-fried flat noodles with tofu and soy sauce.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="card h-100">
+              <img src="../Static/Food/8.jpg" class="card-img-top food-image" alt="Vegetarian Tom Yum">
+              <div class="card-body">
+                  <h5 class="card-title">Vegetarian Tom Yum 🌿</h5>
+                  <p class="card-text">A spicy and tangy soup made with mushrooms and herbs.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="card h-100">
+              <img src="../Static/Food/9.jpg" class="card-img-top food-image" alt="Thai Green Curry">
+              <div class="card-body">
+                  <h5 class="card-title">Thai Green Curry 🌿</h5>
+                  <p class="card-text">A creamy and fragrant curry made with vegetables and tofu.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="card h-100">
+              <img src="../Static/Food/10.jpg" class="card-img-top food-image" alt="Khanom Krok">
+              <div class="card-body">
+                  <h5 class="card-title">Khanom Krok 🌿</h5>
+                  <p class="card-text">Thai coconut pancakes, crispy on the outside and soft inside.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="card h-100">
+              <img src="../Static/Food/11.jpg" class="card-img-top food-image" alt="Vegetarian Som Tam">
+              <div class="card-body">
+                  <h5 class="card-title">Vegetarian Som Tam 🌿</h5>
+                  <p class="card-text">A meat-free version of the famous papaya salad.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="card h-100">
+              <img src="../Static/Food/12.jpg" class="card-img-top food-image" alt="Mango Sticky Rice">
+              <div class="card-body">
+                  <h5 class="card-title">Mango Sticky Rice 🌿</h5>
+                  <p class="card-text">A delicious Thai dessert made with sweet rice and mango.</p>
+              </div>
+          </div>
+      </div>
+
+  </div>
+</div>
     </section>
 
+
+    <div class="floating-icon">
+        <a href="#">
+          <img src="../Static/scroll.png" alt="Floating Icon">
+        </a>
+      </div>
+      
+      <!-- JavaScript for Smooth Scroll -->
+  <script>
+    var scrollToTopBtn = document.getElementById("scrollTopBtn");
+  
+    // Show button when user scrolls down 200px
+    window.onscroll = function () {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            scrollToTopBtn.style.display = "flex";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    };
+  
+    // Smooth scroll to top when clicked
+    scrollToTopBtn.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
     <footer>
       <p>
         <h5>Organized by</h5> <br/>

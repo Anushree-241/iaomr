@@ -23,6 +23,8 @@
       </style>
     <link href="../CSS/style.css" rel="stylesheet" />
     <link href="../CSS/team.css" rel="stylesheet" />
+    <link href="../CSS/scroll.css" rel="stylesheet" />
+
 </head>
 <body>
     <section id="navbar">
@@ -65,7 +67,7 @@
                   Registration
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="registration.html#reg-details">Registraion Details</a></li>
+                  <li><a class="dropdown-item" href="registration.html#reg-details">Registration Details</a></li>
                   <li><a class="dropdown-item" href="registration.html#regis-form">Registration Form</a></li>
                   
                 </ul>
@@ -101,6 +103,7 @@
         </div>
       </nav>
       </section>
+      
       <div class="container mt-4">
         <h2 class="text-center mb-4">Organizing Committee</h2>
         <div class="row">
@@ -114,11 +117,10 @@
     { name: "Dr. Satheesha Reddy B H", designation: "Co-Chairman", details: "", src: "../Static/committe/5.png" },
     { name: "Dr. Shivu M E", designation: "Organizing Secretary", details: "", src: "../Static/committe/6.jpg" },
     { name: "Dr. Annaji A G", designation: "Joint-Secretary", details: "", src: "../Static/committe/7.jpg" },
-    { name: "Dr. Shilpa Patil S", designation: "Joint-Secretary", details: "", src: "../Static/committe/8.jpg" },
+    { name: "Dr. Shilpa Patil ", designation: "Conference Secretary", details: "", src: "../Static/committe/8.jpg" },
     { name: "Dr. Naveen Kumar N", designation: "Registration Committee", details: "", src: "../Static/committe/9.jpg" },
     { name: "Dr. Shilpa B", designation: "Registration Committee", details: "", src: "../Static/committe/10.jpg" },
     { name: "Dr. Sheela", designation: "Registration Committee", details: "", src: "../Static/committe/11.jpg" },
-    { name: "Dr. Sangeetha", designation: "Registration Committee", details: "", src: "../Static/committe/12.jpg" },
     { name: "Dr. Bharathi Patil", designation: "Scientific Committee", details: "", src: "../Static/committe/13.jpg" },
     { name: "Dr. Shesha Prasad", designation: "Scientific Committee", details: "", src: "../Static/committe/15.jpg" },
     { name: "Dr. Sowmya K", designation: "Scientific Committee", details: "", src: "../Static/committe/16.jpg" },
@@ -132,11 +134,12 @@
     { name: "Dr. Utkal", designation: "Banquet Committee", details: "", src: "../Static/committe/24.jpg" },
     { name: "Dr. Raghunand Shinde", designation: "Hospitality Committee", details: "", src: "../Static/committe/25.jpg" },
     { name: "Dr. Raheel Syed", designation: "Hospitality Committee", details: "", src: "../Static/committe/26.jpg" },
-    { name: "Dr. Vaishali", designation: "Cultural Committee", details: "", src: "../Static/committe/27.jpg" },
-    { name: "Dr. Gopakumar", designation: "International Co-ordinator", details: "", src: "../Static/committe/28.jpg" },
+    { name: "Dr. Nandini vijayalakshmi", designation: "Cultural Committee", details: "", src: "../Static/committe/27.jpg" },
+    { name: "Dr. Sangeetha", designation: "Cultural Committee", details: "", src: "../Static/committe/12.jpg" },
+    { name: "Dr. Gopakumar N", designation: "International Co-ordinator", details: "", src: "../Static/committe/28.jpg" },
     { name: "Dr. Deepak T A", designation: "International Co-ordinator", details: "", src: "../Static/committe/29.jpg" },
     { name: "Dr. Jaikrishna H J", designation: "University Co-ordinator", details: "", src: "../Static/committe/30.jpg" },
-    { name: "Dr. Ajai Parihar", designation: "Regional Co-ordinator", details: "", src: "../Static/committe/31.jpg" },
+    { name: "Dr. Ajay Parihar", designation: "Regional Co-ordinator", details: "", src: "../Static/committe/31.jpg" },
     { name: "Dr. Hemanth Mathur", designation: "Regional Co-ordinator", details: "", src: "../Static/committe/32.jpg" },
     { name: "Dr. Satyapal Yadav", designation: "Regional Co-ordinator", details: "", src: "../Static/committe/33.jpg" },
     { name: "Dr. Manu Dillon", designation: "Regional Co-ordinator", details: "", src: "../Static/committe/34.jpg" },
@@ -184,6 +187,11 @@
               const members = [
                   { name: "Dr. K Sri Krishna", designation: "President", details: "Principal, Head of Department, OMDR, Hazaribag College of Dental Sciences and Hospital, Jharkhand", src: "../Static/Team/1.jpg" },
                   { name: "Dr. Prashanth Shenoy", designation: "President Elect", details: "Prof and Head, Oral Medicine and Radiology, Yenopoya Dental College, Mangalore", src: "../Static/Team/2.png" },
+                  { name: "Dr. Shiva Prasad S", designation: "Hon. General Secretary", details: "Professor, OMDR, BDCH, Davangere, Karnataka", src: "../Static/Team/10.png" },
+                  { name: "Dr. Prashanthi Reddy", designation: "Head Office Joint Secretary", details: "Indore, Madhya Pradesh", src: "../Static/Team/11.png" },
+                  { name: "Dr. Adit Srivastava", designation: "Head Office Joint Secretary", details: "Professor, OMDR, Faculty of Dental Sciences, IMS, BHU, Varanasi, Uttar Pradesh", src: "../Static/Team/12.png" },
+                  { name: "Dr. Ramamurthy T K", designation: "Registered Office Secretary", details: "Bangalore, Karnataka", src: "../Static/Team/13.png" },
+                  { name: "Dr. Ashok L", designation: "Registered Office Joint Secretary", details: "Professor, Head of Department, OMDR, Bapuji Dental College and Hospital, Davangere, Karnataka", src: "../Static/Team/14.png" },
                   { name: "Dr. Avinash Tejaswi", designation: "Hon. Treasurer", details: "", src: "../Static/Team/3.png" },
                   { name: "Dr. Neeta Mishra", designation: "Immediate Past President", details: "", src: "../Static/Team/4.png" },
                   { name: "Dr. G V Pramod", designation: "Vice President", details: "Davangere, Karnataka", src: "../Static/Team/5.png" },
@@ -191,11 +199,6 @@
                   { name: "Dr. Shalu Rai", designation: "Vice President", details: "Principal, Agartala Government Dental College, Tripura", src: "../Static/Team/7.png" },
                   { name: "Dr. Dipti Bhatnagar", designation: "Vice President", details: "Bhatnagar's Orthodontic and Dental Centre, Chandigarh", src: "../Static/Team/8.png" },
                   { name: "Dr. N Kannan", designation: "Vice President", details: "Professor and Head, OMDR, Narayana Dental College, Nellore, Andhra Pradesh", src: "../Static/Team/9.png" },
-                  { name: "Dr. Shiva Prasad S", designation: "Hon. General Secretary", details: "Professor, OMDR, BDCH, Davangere, Karnataka", src: "../Static/Team/10.png" },
-                  { name: "Dr. Prashanthi Reddy", designation: "Head Office Joint Secretary", details: "Indore, Madhya Pradesh", src: "../Static/Team/11.png" },
-                  { name: "Dr. Adit Srivastava", designation: "Head Office Joint Secretary", details: "Professor, OMDR, Faculty of Dental Sciences, IMS, BHU, Varanasi, Uttar Pradesh", src: "../Static/Team/12.png" },
-                  { name: "Dr. Ramamurthy T K", designation: "Registered Office Secretary", details: "Bangalore, Karnataka", src: "../Static/Team/13.png" },
-                  { name: "Dr. Ashok L", designation: "Registered Office Joint Secretary", details: "Professor, Head of Department, OMDR, Bapuji Dental College and Hospital, Davangere, Karnataka", src: "../Static/Team/14.png" },
                   { name: "Dr. Deepak T A", designation: "Registered Office Treasurer", details: "Professor, OMDR, V S Dental College and Hospital, Bangalore, Karnataka", src: "../Static/Team/15.jpg" },
                   { name: "Dr. Manisha M Khorate", designation: "Editor in Chief", details: "Professor, Head of Department, OMDR, Goa Dental College and Hospital, Bambolim, Goa", src: "../Static/Team/16.jpg" },
                   { name: "Dr. Deepajatti Patil", designation: "EC Member", details: "Professor, Department of Oral Medicine and Radiology, K. M. Shah Dental College and Hospital, Gujarat", src: "../Static/Team/17.jpg" },
@@ -288,6 +291,32 @@
       </div>
     </section>
     
+    <div class="floating-icon">
+      <a href="#">
+        <img src="../Static/scroll.png" alt="Floating Icon">
+      </a>
+    </div>
+    
+    <!-- JavaScript for Smooth Scroll -->
+<script>
+  var scrollToTopBtn = document.getElementById("scrollTopBtn");
+
+  // Show button when user scrolls down 200px
+  window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          scrollToTopBtn.style.display = "flex";
+      } else {
+          scrollToTopBtn.style.display = "none";
+      }
+  };
+
+  // Smooth scroll to top when clicked
+  scrollToTopBtn.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+
     <footer>
       <p>
         <h5>Organized by</h5> <br/>

@@ -22,6 +22,7 @@
       @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Dancing+Script:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
       </style>
     <link href="../CSS/style.css" rel="stylesheet" />
+    <link href="../CSS/scroll.css" rel="stylesheet" />
   </head>
   <body>
     <section id="navbar">
@@ -65,7 +66,7 @@
                   Registration
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="registration.html#reg-details">Registraion Details</a></li>
+                  <li><a class="dropdown-item" href="registration.html#reg-details">Registration Details</a></li>
                   <li><a class="dropdown-item" href="registration.html#regis-form">Registration Form</a></li>
                   
                 </ul>
@@ -212,16 +213,7 @@
           <div class="col">
             <div class="card mb-3">
               <div class="row g-0">
-                <div
-                  class="col-md-3"
-                  style="margin-left: auto; margin-right: auto"
-                >
-                  <img
-                    src="../Static/chairman.png"
-                    style="height: 300px; object-fit: cover"
-                    alt="..."
-                  />
-                </div>
+                
                 <div class="col-md-8">
                   <div class="card-body text-center mb-0">
                     <h5 class="card-title">Message from Organizing Chairman</h5>
@@ -243,9 +235,22 @@
                       specialty and work together to shape the future of our
                       field.
                     </p>
-                    <h6>Dr. Ramamurthy T K</h6>
-                    <span>Organizing Chairman </span>
+                    
                   </div>
+                </div>
+                <div
+                  class="col-md-2 d-flex flex-column align-items-center text-center"
+                  style="margin-left: auto;margin-right: auto;"
+                >
+                  <img
+                    src="../Static/chairman.png"
+                    style="height: 300px;width: 300px; object-fit: cover"
+                    alt="..."
+                    class="mt-4"
+                  />
+                  <br/>
+                  <h6 class="text-center">Dr. Ramamurthy T K</h6>
+                    <p class="text-center">Organizing Chairman </p>
                 </div>
               </div>
             </div>
@@ -273,19 +278,22 @@
                       board for the first ever international IAOMR post graduate
                       convention , 2025.
                     </p>
-                    <h6>Dr. Shivu M E</h6>
-                    <span>Organizing Secretary </span>
+                    
                   </div>
                 </div>
                 <div
-                  class="col-md-2"
+                  class="col-md-2 d-flex flex-column align-items-center text-center"
                   style="margin-left: auto; margin-right: auto"
                 >
                   <img
                     src="../Static/secratory.jpg"
                     style="height: 300px; object-fit: cover"
                     alt="..."
+                    class="mt-4"
                   />
+                  
+                  <h6 class="text-center">Dr. Shivu M E</h6>
+                    <p class="text-center">Organizing Secretary </p>
                 </div>
               </div>
             </div>
@@ -293,6 +301,32 @@
         </div>
       </div>
     </section>
+
+
+    <div class="floating-icon">
+      <a href="#">
+        <img src="../Static/scroll.png" alt="Floating Icon">
+      </a>
+    </div>
+    
+    <!-- JavaScript for Smooth Scroll -->
+<script>
+  var scrollToTopBtn = document.getElementById("scrollTopBtn");
+
+  // Show button when user scrolls down 200px
+  window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          scrollToTopBtn.style.display = "flex";
+      } else {
+          scrollToTopBtn.style.display = "none";
+      }
+  };
+
+  // Smooth scroll to top when clicked
+  scrollToTopBtn.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
 
     <footer>
       <p>

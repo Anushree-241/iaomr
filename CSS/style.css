@@ -142,22 +142,38 @@
   align-items: center;
   text-align: center;
   color: white;
-  gap: 20px; /* Adds spacing between elements */
+  gap: 300px; /* Adds spacing between elements */
 }
 
 /* 🔹 Text Containers */
-.text-left, .text-right {
+.text-right {
   padding: 20px;
   width: 45%;
   max-width: 600px; /* Prevents text from stretching too wide */
   text-align: center;
 }
+.text-left{
+  margin-left: 0rem;
+  
+  max-width: 500px; /* Prevents text from stretching too wide */
+  text-align: left;
+}
 
 /* 🔹 Responsive Text Scaling */
-.text-left h1, .text-right h1 {
+.text-left h1 {
   color: rgb(255, 200, 35);
   font-size: clamp(2rem, 5vw, 3.5rem); /* Dynamically adjusts */
   font-weight: bold;
+}
+.text-right h1 {
+  color: rgb(255, 200, 35);
+  font-size: clamp(1rem, 4vw, 2.5rem); /* Dynamically adjusts */
+  font-weight: bold;
+}
+
+
+.text-right h4,h5{
+  color: rgb(255, 200, 35);
 }
 
 .text-left h3, .text-right h3 {
@@ -190,6 +206,7 @@
     flex-direction: column; /* Stacks elements on top of each other */
     align-items: center;
     text-align: center;
+    gap: 10px; 
   }
 
   .text-left, .text-right {
